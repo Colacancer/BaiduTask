@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #d1d3d7;
+        }
+
+        header{
+            margin: 0;
+            background-color: #333333;
+            height: 50px;
+            width: auto;
+            display: block;
+        }
+        header img{
+            float: left;
+            margin-left: 50px;
+            width: auto;
+            height: 50px;
+        }
+        .topNav{
+            margin-top: 5px;
+            float: right;
+            display: inline-block;
+        }
+        .topNav li{
+            float: left;
+            margin: 10px;
+        }
+        .topNav li a{
+            font-size: 12px;
+            color: white;
+            text-decoration: none;
+        }
+        .topNav li a:hover{
+            color: gray;
+        }
+
+        article{
+            margin: 20px;
+            padding: 30px;
+            background-color: white;
+        }
+        article *{
+            margin-top: 10px;
+        }
+        article p{
+            text-indent: 2em;
+        }
+
+        article ul li{
+            margin: 5px 20px;
+            list-style: none;
+        }
+
+        .images{
+            margin: 20px;
+            padding: 30px;
+            background-color: white;
+        }
+        .images dd{
+            border: 1px solid gray;
+            text-align: center;
+            width: 120px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .images dd img{
+            width: 100px;
+            margin: auto 10px;
+        }
+
+        article ol li{
+            margin: 5px 30px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table thead{
+            background-color: #333333;
+            color: white;
+            text-align: left;
+        }
+        table tfoot{
+            background-color: #cccccc;
+        }
+
+        aside{
+            margin: 20px;
+            padding: 30px;
+            background-color: white;
+        }
+        aside form .asidebox{
+            padding-left: 20%;
+        }
+        .asidebox div{
+            display: inline-block;
+            vertical-align: text-top;
+        }
+        aside .title{
+            display: inline-block;
+            text-align: right;
+            width: 20%;
+            margin-right: 1em;
+            margin-top: 0.7em;
+        }
+        aside form div p{
+            color: #999;
+            font-size: 0.7em;
+        }
+        textarea {
+            vertical-align: text-top;
+            width: 60%;
+            height: 10em;
+        }
+        .formSubmit{
+            width: 100%;
+            padding: 10px;
+            background-color: #3355dd;
+            color: white;
+            border-radius: 15px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            height: 50px;
+        }
+        footer p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imgs/baidu.jpg" alt="logo"/>
+        <ul class="topNav">
+            <li><a href="#">导航1</a></li>
+            <li><a href="#">导航2</a></li>
+            <li><a href="#">导航3</a></li>
+            <li><a href="#">导航4</a></li>
+        </ul>
+    </header>
+    <main>
+        <article>
+            <h2>一级标题</h2>
+            <h3>二级标题</h3>
+            <h5>文章作者 发表时间</h5>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                这是一个很长很长的段落，这是一个很长很长的段落,这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                </p>
+            <img src="imgs/bigbrother.png" alt="大表哥">
+            <p>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这是一个到ife.baidu.com的链接</a>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这个很长的段落终于结束了。</p>
+        </article>
+
+        <article>
+            <h2>另一篇文章的一级标题</h2>
+            <h3>二级标题</h3>
+            <h5>文章作者 发表时间</h5>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+                <a href="http://ife.baidu.com" target="_blank">这一在新歌新窗口打开ife.baidu.com的链接</a>这是一个很长很长的段落，
+                这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这个很长的段落终于结束了。</p>
+            <img src="imgs/bigbrother.png" alt="大表哥">
+            <ul>
+                <li>列表项目1</li>
+                <li>列表项目2</li>
+                <li>列表项目3</li>
+            </ul>
+        </article>
+
+        <div class="images">
+            <dl>
+                <dt><h2>图片</h2></dt>
+                <dd><p>好看的图片</p><img src="imgs/bigbrother.png" alt="大表哥"></dd>
+                <dd><p>好看的图片</p><img src="imgs/bigbrother.png" alt="大表哥"></dd>
+                <dd><p>好看的图片</p><img src="imgs/bigbrother.png" alt="大表哥"></dd>
+                <dd><p>好看的图片</p><img src="imgs/bigbrother.png" alt="大表哥"></dd>
+                <dd><p>好看的图片</p><img src="imgs/bigbrother.png" alt="大表哥"></dd>
+                <dd><p>好看的图片</p><img src="imgs/bigbrother.png" alt="大表哥"></dd>
+            </dl>
+        </div>
+
+        <article>
+            <h2>最后一篇文章的一级标题</h2>
+            <h3>二级标题</h3>
+            <h5>文章作者 发表时间</h5>
+            <ol>
+                <li>排名1</li>
+                <li>排名2</li>
+                <li>排名3</li>
+            </ol>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>表头</th>
+                        <th>表头</th>
+                        <th>表头</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>表内单元格</td>
+                        <td>表内单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内单元格</td>
+                        <td>表内单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内单元格</td>
+                        <td>表内单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内单元格</td>
+                        <td>表内单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>总计</td>
+                        <td colspan="2">1000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <aside>
+            <h2>这里是一个侧栏，这是侧栏的标题</h2>
+            <form onsubmit="return false">
+                <div class="asidebox">
+                    <lable for="email" class="title">请输入邮箱地址</lable>
+                    <div>
+                        <input type="text" value="这是一个文本输入框">
+                        <p>邮箱地址请安要求格式输入</p>
+                    </div>
+                </div>
+
+                <div class="asidebox">
+                    <lable for="password" class="title">请输入密码</lable>
+                    <input type="password" value="这是一个文本输入框">
+                    <br>
+                    <lable for="password" class="title">请重复输入密码</lable>
+                    <div>
+                        <input type="password" value="这是一个文本输入框">
+                        <p>密码为6-16位英文数字</p>
+                    </div>
+                </div>
+
+                <div class="asidebox">
+                    <lable class="title">性别</lable>
+                    <input type="radio" name="sex">男
+                    <input type="radio" name="sex">女
+                </div>
+                <div class="asidebox">
+                    <lable class="title">城市</lable>
+                    <select id="city">
+                        <option value="hz">杭州</option>
+                        <option value="cq">重庆</option>
+                        <option value="ty">太原</option>
+                    </select>
+                </div>
+                <div class="asidebox">
+                    <lable class="title">爱好</lable>
+                    <input type="checkbox" name="hobby" value="sport">运动
+                    <input type="checkbox" name="hobby" value="art">艺术
+                    <input type="checkbox" name="hobby" value="science">科学
+                </div>
+                <div class="asidebox">
+                    <lable class="title">个人描述</lable>
+                    <textarea>这是一个多行输入框，输入你的个人描述</textarea>
+                </div>
+                <input class="formSubmit" type="submit" value="确认提交">
+            </form>
+        </aside>
+    </main>
+    <footer>
+        <p>版权所有&copy;</p>
+    </footer>
+</body>
+</html>
